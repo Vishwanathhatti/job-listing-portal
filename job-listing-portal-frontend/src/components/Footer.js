@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gray-200 pt-8 pb-6">
+    <footer className="relative bg-[#EBEBEB]  pt-8 pb-6">
   <div className="container mx-auto px-4">
     <div className="flex flex-wrap text-left lg:text-left ">
       <div className="w-full lg:w-6/12 px-4">
-        <h4 className="text-3xl font-semibold mb-2 text-[#1C64F2]">Let's keep in touch!</h4>
-        <p className="text-lg mt-0 mb-2 text-blueGray-600 w-80">
+        <h4 className="text-3xl font-semibold mb-2 text-[#1C64F2]">Job Portal</h4>
+        <p className="text-lg mt-0 mb-2 text-blueGray-600 lg:w-80">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta lectus ridiculus in mattis. Netus sodales in volutpat ullamcorper amet adipiscing fermentum.
         </p>
         <div className="mt-6 lg:mb-0 mb-6">

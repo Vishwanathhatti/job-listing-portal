@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { useLocation } from 'react-router-dom'
 const Navbar = () => {
-
+  const location= useLocation()
+  const showSearchbar= !['/home'].includes(location.pathname);
   const handleSubmit = (e) => {
     e.preventDefault()
   }
@@ -57,7 +58,9 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-2">
+
+          { showSearchbar && 
+          <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-2">        
             <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
               <div className="relative md:ml-4 mt-4 md:mt-0 order-2">
                 <input type="text" className="block w-full px-4 py-2 pr-12 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." />
@@ -69,6 +72,9 @@ const Navbar = () => {
               </div>
             </form>
           </div>
+          }
+
+          
         </div>
       </nav>
     </>
