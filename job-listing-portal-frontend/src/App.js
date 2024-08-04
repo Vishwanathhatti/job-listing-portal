@@ -7,6 +7,7 @@ import Homepage from './pages/Homepage';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Footer from './components/Footer';
+import Jobs from './pages/Jobs';
 
 function App() {
   const location = useLocation();
@@ -20,6 +21,8 @@ function App() {
           <Route path='/' element={<Login />} />
           <Route path='/home' element={<Homepage />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/jobs' element={<Jobs />} />
+
         </Routes>
       </div>
       {showFooter && <Footer />}
