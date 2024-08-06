@@ -37,6 +37,7 @@ const Jobs = () => {
           </div>
         )}
         <div className={`flex-1 ${isMobile ? (showFilter ? 'w-full' : 'w-full') : 'w-3/4'}`}>
+
           <JobsDisplay />
         </div>
       </div>
