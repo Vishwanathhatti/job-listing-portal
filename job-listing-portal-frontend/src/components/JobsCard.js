@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const JobsCard = ({id, name, role, jobType, location, locationType, salary, salaryPer, vacancies, companyLogo}) => {
   return (
-    <Link to={`/job-details/${id}`} className='flex flex-col gap-2 w-[100%] lg:w-[70%] hover:shadow-xl outline outline-1 outline-gray-400 rounded-lg p-3 mb-5 hover:scale-105 transition-transform '>
+    <Link to={`/job-details/${id}`} className='flex flex-col gap-2 w-[100%] lg:w-[70%] md:hover:shadow-xl outline outline-1 outline-gray-400 rounded-lg p-3 mb-5 hover:scale-105 transition-transform '>
         
         <div className='flex gap-2 items-center mb-4'>
             <div className='text-start'>

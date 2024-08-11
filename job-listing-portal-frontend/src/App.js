@@ -20,6 +20,8 @@ function App() {
       <div className='pt-5'>
         <Routes>
           <Route path='/' element={<Login />} />
+          <Route path='/login' element={<Login />} />
+
           <Route path='/home' element={<Homepage />} />
           <Route path='/register' element={<Register />} />
           <Route path='/jobs' element={<Jobs />} />
